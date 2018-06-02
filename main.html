@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <title>Hoeless's Website</title>
+<head>
+  <link href="https://i.imgur.com/DZp5ErP.jpg"  rel="icon">
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -71,7 +74,7 @@ a{text-decoration:none;}
     left:0;
     right:0;
   transform:translateY(100%);/*use transform:translateY(100%); to remove footer*/
-    background-color:rgba(172, 255, 185, 0.37);
+    background-color:rgba(213, 222, 215, 0.77);
     color:#fff;
     padding:0 8px;
     content:attr(data-title);
@@ -105,7 +108,7 @@ a{text-decoration:none;}
 .textOverImage:hover:before{
     transform:translateY(0);
     padding:8px;
-    background-color:rgba(172, 255, 185, 0.37);
+    background-color:rgba(213, 222, 215, 0.77);
     transition:0.5s;
 }
 
@@ -167,7 +170,7 @@ text-align:center
     <a id="ummye" href="#home" class="w3-bar-item w3-button">HOME</a></li>
     <a id="ummye" href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a id="ummye" href="#preview" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PREVIEWS</a>
-    <a id="ummye" href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT / REQUEST A WIDGET</a>
     <a id="ummye" href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -177,7 +180,7 @@ text-align:center
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a id="ummye" href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a id="ummye" href="#preview" class="w3-bar-item w3-button" onclick="toggleFunction()">PREVIEWS</a>//anything else is what I was gonna say
-    <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT / REQUEST A WIDGET</a>
     <a id="ummye" href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
@@ -246,15 +249,14 @@ text-align:center
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-container w3-padding-64" id="preview">
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white" id="preview">WIDGET PREVIEWS</span>
+      <span class="w3-xxlarge w3-text-white">WIDGET PREVIEWS</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center">Here are some of my favourite widgets..<br><i><b><u>Hover</u></b> to reveal the name.</i></p><br>
 
@@ -288,7 +290,7 @@ text-align:center
       ">
     </a>
 
-    <a class="textOverImage" style="background-image:url(https://i.imgur.com/ldsBxSh.png)" data-title="HL.11" data-text="A request inspired by SB EW 86
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/S468gmo.png)" data-title="HL.11" data-text="A request inspired by SB EW 86
       ">
     </a>
 
@@ -308,18 +310,17 @@ text-align:center
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
   <p class="w3-center"><em><b><u>I'm currently accepting widget requests!</em></b></u></p>
 
   <p class="w3-center">Please email 'officialhoeless@gmail.com'
+  <br>
   <br>
   <br> For the subject enter <i><u>Widget Request</u></i>
   <br> In your message you must contain:
