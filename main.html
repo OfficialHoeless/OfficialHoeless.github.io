@@ -10,6 +10,24 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+<script language=javascript>
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("mobile.html");
+}
+-->
+</script>
+
+<!--
+if (screen.width <= 700) {
+document.location = "/mobile.html";
+}*-
+
+
+//-->
+</script>
 <script>
 $(document).ready(function(){
 // Add smooth scrolling to all links
@@ -51,8 +69,8 @@ a{text-decoration:none;}
 }
 .textOverImage{
     position:relative;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
     float:left;
     margin:4px;
     background-size:100%;
@@ -179,9 +197,15 @@ text-align:center
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a id="ummye" href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+<<<<<<< HEAD
     <a id="ummye" href="#preview" class="w3-bar-item w3-button" onclick="toggleFunction()">PREVIEWS</a>//anything else is what I was gonna say
     <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT / REQUEST A WIDGET</a>
     <a id="ummye" href="#" class="w3-bar-item w3-button">SEARCH</a>
+=======
+    <a id="ummye" href="#preview" class="w3-bar-item w3-button" onclick="toggleFunction()">PREVIEWS</a>
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a id="ummye" href="/mobile.html" class="w3-bar-item w3-button">MOBILE VERSION</a>
+>>>>>>> 81b5acbb0fe63bf1c00d97a1c895dbe43c2e4d97
   </div>
 </div>
 
@@ -348,15 +372,10 @@ text-align:center
 <footer class="w3-center w3-light-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </footer>
+ <p><small>Website still in development.</small></p>
  <p><small>Site developed by Hoeless with a huge help from Ducky.</small></p>
-
+ <a href="/mobile.html">Mobile Version</a>
 </body>
 </html>
