@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<title>Hoeless's Website</title>
+<head>
+  <link href="https://i.imgur.com/DZp5ErP.jpg"  rel="icon">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+<script language=javascript>
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("mobile.html");
+}
+-->
+</script>
+
+<!--
+if (screen.width <= 700) {
+document.location = "/mobile.html";
+}*-
+
+
+//-->
+</script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
+});
+</script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:250px;
+    height:250px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.2s;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 0 4px #000;
+  }
+
+  .textOverImage:hover{
+    background-size:110%;
+  }
+
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(100%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(213, 222, 215, 0.77);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(213, 222, 215, 0.77);
+    transition:0.5s;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://i.imgur.com/0OrSjiH.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://i.imgur.com/0OrSjiH.png");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("https://i.imgur.com/0OrSjiH.png");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+#test {
+color: #777;
+text-decoration: none;
+display: inline;
+border: 1px solid #777;
+padding: 9px 13px;
+font-size: 20px;
+transition: background 0.15s linear;
+text-align:center
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a id="ummye" href="#home" class="w3-bar-item w3-button">HOME</a></li>
+    <a id="ummye" href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a id="ummye" href="#preview" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PREVIEWS</a>
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT / REQUEST A WIDGET</a>
+    <a id="ummye" href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a id="ummye" href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+<<<<<<< HEAD
+    <a id="ummye" href="#preview" class="w3-bar-item w3-button" onclick="toggleFunction()">PREVIEWS</a>//anything else is what I was gonna say
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT / REQUEST A WIDGET</a>
+    <a id="ummye" href="#" class="w3-bar-item w3-button">SEARCH</a>
+=======
+    <a id="ummye" href="#preview" class="w3-bar-item w3-button" onclick="toggleFunction()">PREVIEWS</a>
+    <a id="ummye" href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a id="ummye" href="/mobile.html" class="w3-bar-item w3-button">MOBILE VERSION</a>
+>>>>>>> 81b5acbb0fe63bf1c00d97a1c895dbe43c2e4d97
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">OFFICIAL <span class="w3-hide-small">HOELESS</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Hoeless</b></p><br>
+      <img src="https://i.imgur.com/D4mg2OU.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+
+<br>
+<br>
+<br>
+<br>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my site, my name is Hoeless, I am a teen SBHTML widget developer, I do this for fun, and love seeing positive feedback.
+        I have always shown an interest in coding and development of lots of different things, I always attempted to code things but failed, and gave up.
+         Now I have found something I am finally somewhat skilled at I intend to keep going, I find it satisfying when I create a popular widget as I know I have made people happy.
+          I've always felt I'm a rather creative person but I've also never really had an outlet, so this is it. I hope you love my work. Other than iOS, I enjoy playing games such as R6S, PUBG, Rust, and Rimworld. I also like memes.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">I'm really good at :</p>
+  <p class="w3"><i class="fa fa-user"></i>  Nothing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:99%">98%</div>
+  </div>
+  <p class="w3"><i class="fa fa-laptop"></i>  Making widgets</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:2%">1%</div>
+  </div>
+  <p class="w3"><i class="fa fa-photo"></i>  Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:2%">1%</div>
+  </div>
+</div>
+<br>
+<br>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">-3</span><br>
+    Friends
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Widgets created
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">58+</span><br>
+    Good reviews
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    IQ
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="w3-content w3-container w3-padding-64" id="preview">
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white">WIDGET PREVIEWS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center">Here are some of my favourite widgets..<br><i><b><u>Hover</u></b> to reveal the name.</i></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/Hi4UBvJ.jpg)" data-title="HL.01" data-text="My first ever widget.
+    	">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/ZUNphNs.png)" data-title="HL.03" data-text="Basically just a domino but with numbers.
+      ">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/ZYXo6zz.png)" data-title="HL.05" data-text="Inspired by EW SB.86
+    	">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/RPlVlbq.jpg)" data-title="HL.06" data-text="It's nothing without the awesome font cx
+    	">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/R2eQpLS.jpg)" data-title="HL.07" data-text="Inspired by the OnePlus lockscreen clock.
+      ">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/x9UCXCb.png)" data-title="HL.08" data-text="Just fancied a 'bottom-bar' sort of design.
+      ">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/MDpQVzK.png)" data-title="HL.10" data-text="A stylish / minimalist clock.
+      ">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/S468gmo.png)" data-title="HL.11" data-text="A request inspired by SB EW 86
+      ">
+    </a>
+
+    <a class="textOverImage" style="background-image:url(https://i.imgur.com/Mk4kHkR.png)" data-title="Coming soon!" data-text="wen eta wijit?
+      ">
+    </a>
+
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+  <p class="w3-center"><em><b><u>I'm currently accepting widget requests!</em></b></u></p>
+
+  <p class="w3-center">Please email 'officialhoeless@gmail.com'
+  <br>
+  <br>
+  <br> For the subject enter <i><u>Widget Request</u></i>
+  <br> In your message you must contain:
+  <br> A description
+  <br> Your prefered font
+  <br> A rough drawing
+  <br> Your Twitter or Reddit username
+  <br> <b><u> If you don't reply within 2 days of the project being completed it will not be uploaded </b></u>
+  <br>
+  <br>Social links :
+  <br>
+
+  <p class="w3-center w3-opacity w3-hover-opacity-on"><a href="https://cydia.saurik.com/api/share#?source=http://hoerepo.yourepo.com/" target="_blank" class="w3-button w3-dark-grey">Add My Repo</a>
+
+  <p class="w3-center w3-opacity w3-hover-opacity-on"><a href="https://twitter.com/OfficialHoeless" target="_blank" class="w3-button w3-dark-grey">My Twitter</a>
+
+  <p class="w3-center w3-opacity w3-hover-opacity-on"><a href="https://www.reddit.com/user/HoelessJoe/" target="_blank" class="w3-button w3-dark-grey">My Reddit</a>
+
+  <p class="w3-center w3-opacity w3-hover-opacity-on"><a href="https://www.paypal.me/officialhoeless" target="_blank" class="w3-button w3-dark-grey">PayPal.Me</a>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+</footer>
+ <p><small>Website still in development.</small></p>
+ <p><small>Site developed by Hoeless with a huge help from Ducky.</small></p>
+ <a href="/mobile.html">Mobile Version</a>
+</body>
+</html>
